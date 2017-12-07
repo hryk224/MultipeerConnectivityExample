@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED213C1C1FD7DB970026E92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED213C1B1FD7DB970026E92A /* Assets.xcassets */; };
+		ED213C281FD7DBA70026E92A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED213C271FD7DBA70026E92A /* AppDelegate.swift */; };
+		ED213C2F1FD7DBA70026E92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED213C2E1FD7DBA70026E92A /* Assets.xcassets */; };
+		ED2F22591FD7F64100FBE5B4 /* KeyboardObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F22581FD7F64100FBE5B4 /* KeyboardObservable.swift */; };
+		ED2F225C1FD7FE2300FBE5B4 /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6E31FD7DDCF00C04972 /* SessionContainer.swift */; };
+		ED2F225D1FD7FE2300FBE5B4 /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6E41FD7DDCF00C04972 /* Transcript.swift */; };
+		ED2F22611FD8016200FBE5B4 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F225F1FD8016200FBE5B4 /* ChatMessageView.swift */; };
+		ED2F22661FD8028000FBE5B4 /* ChatMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED2F22651FD8028000FBE5B4 /* ChatMessageView.xib */; };
+		EDA60FB81FD910F2005632A8 /* CaptureReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA60FB71FD910F2005632A8 /* CaptureReceiverViewController.swift */; };
+		EDA60FBA1FD9113E005632A8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA60FB91FD9113E005632A8 /* Const.swift */; };
+		EDA60FBB1FD91154005632A8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA60FB91FD9113E005632A8 /* Const.swift */; };
+		EDA9D0F21FDE9F9700B7F7DD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA9D0F11FDE9F9700B7F7DD /* ReplayKit.framework */; };
+		EDC4CF651FDA3CD9007660EC /* SessionContainer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4CF641FDA3CD9007660EC /* SessionContainer2.swift */; };
+		EDC4CF6A1FDA42A7007660EC /* SessionContainer2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4CF691FDA42A7007660EC /* SessionContainer2.swift */; };
+		EDC4CF6C1FDA68FA007660EC /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4CF6B1FDA68FA007660EC /* Capture.swift */; };
+		EDC4CF6D1FDA69F1007660EC /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC4CF6B1FDA68FA007660EC /* Capture.swift */; };
+		EDD133591FD92BC2005794E4 /* CaptureSenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD133581FD92BC2005794E4 /* CaptureSenderViewController.swift */; };
+		EDD1335B1FD92BE6005794E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD1335A1FD92BE6005794E4 /* Main.storyboard */; };
+		EDEBC6E11FD7DDB500C04972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEBC6E01FD7DDB500C04972 /* LaunchScreen.storyboard */; };
+		EDEBC6EE1FD7DDD000C04972 /* SessionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6E31FD7DDCF00C04972 /* SessionContainer.swift */; };
+		EDEBC6EF1FD7DDD000C04972 /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6E41FD7DDCF00C04972 /* Transcript.swift */; };
+		EDEBC6F11FD7DDD000C04972 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6E81FD7DDD000C04972 /* ChatViewController.swift */; };
+		EDEBC6F21FD7DDD000C04972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDEBC6E91FD7DDD000C04972 /* Main.storyboard */; };
+		EDEBC6F41FD7DDD000C04972 /* ChatMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDEBC6EC1FD7DDD000C04972 /* ChatMessageView.xib */; };
+		EDEBC6F51FD7DDD000C04972 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6ED1FD7DDD000C04972 /* ChatMessageView.swift */; };
+		EDEBC6F81FD7DDEB00C04972 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEBC6F71FD7DDE500C04972 /* MultipeerConnectivity.framework */; };
+		EDEBC7031FD7DE9E00C04972 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC6FD1FD7DE9E00C04972 /* ChatViewController.swift */; };
+		EDEBC7061FD7DE9E00C04972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEBC7021FD7DE9E00C04972 /* AppDelegate.swift */; };
+		EDEBC7081FD7DEC900C04972 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEBC7071FD7DEC200C04972 /* MultipeerConnectivity.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED213C121FD7DB970026E92A /* tvOS-MultipeerConnectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-MultipeerConnectivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED213C1B1FD7DB970026E92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED213C1D1FD7DB970026E92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED213C251FD7DBA70026E92A /* iOS-MultipeerConnectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MultipeerConnectivity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED213C271FD7DBA70026E92A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED213C2E1FD7DBA70026E92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED213C331FD7DBA70026E92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2F22581FD7F64100FBE5B4 /* KeyboardObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObservable.swift; sourceTree = "<group>"; };
+		ED2F225F1FD8016200FBE5B4 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		ED2F22651FD8028000FBE5B4 /* ChatMessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMessageView.xib; sourceTree = "<group>"; };
+		EDA60FB71FD910F2005632A8 /* CaptureReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureReceiverViewController.swift; sourceTree = "<group>"; };
+		EDA60FB91FD9113E005632A8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		EDA9D0F11FDE9F9700B7F7DD /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.1.sdk/System/Library/Frameworks/ReplayKit.framework; sourceTree = DEVELOPER_DIR; };
+		EDC4CF641FDA3CD9007660EC /* SessionContainer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContainer2.swift; sourceTree = "<group>"; };
+		EDC4CF691FDA42A7007660EC /* SessionContainer2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContainer2.swift; sourceTree = "<group>"; };
+		EDC4CF6B1FDA68FA007660EC /* Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		EDD133581FD92BC2005794E4 /* CaptureSenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSenderViewController.swift; sourceTree = "<group>"; };
+		EDD1335A1FD92BE6005794E4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EDEBC6E01FD7DDB500C04972 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDEBC6E31FD7DDCF00C04972 /* SessionContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionContainer.swift; sourceTree = "<group>"; };
+		EDEBC6E41FD7DDCF00C04972 /* Transcript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
+		EDEBC6E81FD7DDD000C04972 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EDEBC6E91FD7DDD000C04972 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EDEBC6EC1FD7DDD000C04972 /* ChatMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMessageView.xib; sourceTree = "<group>"; };
+		EDEBC6ED1FD7DDD000C04972 /* ChatMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		EDEBC6F71FD7DDE500C04972 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		EDEBC6FD1FD7DE9E00C04972 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EDEBC7021FD7DE9E00C04972 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDEBC7071FD7DEC200C04972 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.1.sdk/System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED213C0F1FD7DB970026E92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEBC7081FD7DEC900C04972 /* MultipeerConnectivity.framework in Frameworks */,
+				EDA9D0F21FDE9F9700B7F7DD /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED213C221FD7DBA70026E92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEBC6F81FD7DDEB00C04972 /* MultipeerConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED213BF01FD7DB790026E92A = {
+			isa = PBXGroup;
+			children = (
+				ED2F225A1FD7FDF000FBE5B4 /* Core */,
+				EDEBC6F61FD7DDE500C04972 /* Frameworks */,
+				ED213C261FD7DBA70026E92A /* iOS-MultipeerConnectivity */,
+				ED213BFA1FD7DB790026E92A /* Products */,
+				ED213C131FD7DB970026E92A /* tvOS-MultipeerConnectivity */,
+			);
+			sourceTree = "<group>";
+		};
+		ED213BFA1FD7DB790026E92A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED213C251FD7DBA70026E92A /* iOS-MultipeerConnectivity.app */,
+				ED213C121FD7DB970026E92A /* tvOS-MultipeerConnectivity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED213C131FD7DB970026E92A /* tvOS-MultipeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6F91FD7DE8100C04972 /* Resources */,
+				EDEBC6FA1FD7DE9E00C04972 /* Sources */,
+			);
+			path = "tvOS-MultipeerConnectivity";
+			sourceTree = "<group>";
+		};
+		ED213C261FD7DBA70026E92A /* iOS-MultipeerConnectivity */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6DE1FD7DD7400C04972 /* Resources */,
+				EDEBC6DF1FD7DD8C00C04972 /* Sources */,
+			);
+			path = "iOS-MultipeerConnectivity";
+			sourceTree = "<group>";
+		};
+		ED2F225A1FD7FDF000FBE5B4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6E21FD7DDCF00C04972 /* Model */,
+				EDA60FB91FD9113E005632A8 /* Const.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED2F225E1FD8015000FBE5B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F225F1FD8016200FBE5B4 /* ChatMessageView.swift */,
+				ED2F22651FD8028000FBE5B4 /* ChatMessageView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC4CF671FDA428A007660EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4CF641FDA3CD9007660EC /* SessionContainer2.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC4CF681FDA429E007660EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4CF691FDA42A7007660EC /* SessionContainer2.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDEBC6DE1FD7DD7400C04972 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED213C2E1FD7DBA70026E92A /* Assets.xcassets */,
+				ED213C331FD7DBA70026E92A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDEBC6DF1FD7DD8C00C04972 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4CF671FDA428A007660EC /* Model */,
+				EDEBC6E51FD7DDD000C04972 /* UI */,
+				ED213C271FD7DBA70026E92A /* AppDelegate.swift */,
+				EDEBC6E01FD7DDB500C04972 /* LaunchScreen.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDEBC6E21FD7DDCF00C04972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4CF6B1FDA68FA007660EC /* Capture.swift */,
+				EDEBC6E31FD7DDCF00C04972 /* SessionContainer.swift */,
+				EDEBC6E41FD7DDCF00C04972 /* Transcript.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDEBC6E51FD7DDD000C04972 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6E61FD7DDD000C04972 /* Controller */,
+				EDEBC6EB1FD7DDD000C04972 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EDEBC6E61FD7DDD000C04972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDA60FB71FD910F2005632A8 /* CaptureReceiverViewController.swift */,
+				EDEBC6E81FD7DDD000C04972 /* ChatViewController.swift */,
+				ED2F22581FD7F64100FBE5B4 /* KeyboardObservable.swift */,
+				EDEBC6E91FD7DDD000C04972 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EDEBC6EB1FD7DDD000C04972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6ED1FD7DDD000C04972 /* ChatMessageView.swift */,
+				EDEBC6EC1FD7DDD000C04972 /* ChatMessageView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDEBC6F61FD7DDE500C04972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC7071FD7DEC200C04972 /* MultipeerConnectivity.framework */,
+				EDEBC6F71FD7DDE500C04972 /* MultipeerConnectivity.framework */,
+				EDA9D0F11FDE9F9700B7F7DD /* ReplayKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDEBC6F91FD7DE8100C04972 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED213C1B1FD7DB970026E92A /* Assets.xcassets */,
+				ED213C1D1FD7DB970026E92A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EDEBC6FA1FD7DE9E00C04972 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EDC4CF681FDA429E007660EC /* Model */,
+				EDEBC6FB1FD7DE9E00C04972 /* UI */,
+				EDEBC7021FD7DE9E00C04972 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EDEBC6FB1FD7DE9E00C04972 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EDEBC6FC1FD7DE9E00C04972 /* Controller */,
+				ED2F225E1FD8015000FBE5B4 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EDEBC6FC1FD7DE9E00C04972 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDD133581FD92BC2005794E4 /* CaptureSenderViewController.swift */,
+				EDEBC6FD1FD7DE9E00C04972 /* ChatViewController.swift */,
+				EDD1335A1FD92BE6005794E4 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED213C111FD7DB970026E92A /* tvOS-MultipeerConnectivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED213C1E1FD7DB970026E92A /* Build configuration list for PBXNativeTarget "tvOS-MultipeerConnectivity" */;
+			buildPhases = (
+				ED213C0E1FD7DB970026E92A /* Sources */,
+				ED213C0F1FD7DB970026E92A /* Frameworks */,
+				ED213C101FD7DB970026E92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tvOS-MultipeerConnectivity";
+			productName = "tvOS-MultipeerConnectivity";
+			productReference = ED213C121FD7DB970026E92A /* tvOS-MultipeerConnectivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED213C241FD7DBA70026E92A /* iOS-MultipeerConnectivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED213C341FD7DBA70026E92A /* Build configuration list for PBXNativeTarget "iOS-MultipeerConnectivity" */;
+			buildPhases = (
+				ED213C211FD7DBA70026E92A /* Sources */,
+				ED213C221FD7DBA70026E92A /* Frameworks */,
+				ED213C231FD7DBA70026E92A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-MultipeerConnectivity";
+			productName = "iOS-MultipeerConnectivity";
+			productReference = ED213C251FD7DBA70026E92A /* iOS-MultipeerConnectivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED213BF11FD7DB790026E92A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = hryk224;
+				TargetAttributes = {
+					ED213C111FD7DB970026E92A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					ED213C241FD7DBA70026E92A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ED213BF41FD7DB790026E92A /* Build configuration list for PBXProject "MultipeerConnectivity" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = ED213BF01FD7DB790026E92A;
+			productRefGroup = ED213BFA1FD7DB790026E92A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED213C241FD7DBA70026E92A /* iOS-MultipeerConnectivity */,
+				ED213C111FD7DB970026E92A /* tvOS-MultipeerConnectivity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED213C101FD7DB970026E92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED213C1C1FD7DB970026E92A /* Assets.xcassets in Resources */,
+				ED2F22661FD8028000FBE5B4 /* ChatMessageView.xib in Resources */,
+				EDD1335B1FD92BE6005794E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED213C231FD7DBA70026E92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED213C2F1FD7DBA70026E92A /* Assets.xcassets in Resources */,
+				EDEBC6F41FD7DDD000C04972 /* ChatMessageView.xib in Resources */,
+				EDEBC6E11FD7DDB500C04972 /* LaunchScreen.storyboard in Resources */,
+				EDEBC6F21FD7DDD000C04972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED213C0E1FD7DB970026E92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEBC7061FD7DE9E00C04972 /* AppDelegate.swift in Sources */,
+				EDC4CF6D1FDA69F1007660EC /* Capture.swift in Sources */,
+				EDD133591FD92BC2005794E4 /* CaptureSenderViewController.swift in Sources */,
+				ED2F22611FD8016200FBE5B4 /* ChatMessageView.swift in Sources */,
+				EDEBC7031FD7DE9E00C04972 /* ChatViewController.swift in Sources */,
+				EDA60FBB1FD91154005632A8 /* Const.swift in Sources */,
+				ED2F225C1FD7FE2300FBE5B4 /* SessionContainer.swift in Sources */,
+				EDC4CF6A1FDA42A7007660EC /* SessionContainer2.swift in Sources */,
+				ED2F225D1FD7FE2300FBE5B4 /* Transcript.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED213C211FD7DBA70026E92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED213C281FD7DBA70026E92A /* AppDelegate.swift in Sources */,
+				EDC4CF6C1FDA68FA007660EC /* Capture.swift in Sources */,
+				EDA60FB81FD910F2005632A8 /* CaptureReceiverViewController.swift in Sources */,
+				EDEBC6F51FD7DDD000C04972 /* ChatMessageView.swift in Sources */,
+				EDEBC6F11FD7DDD000C04972 /* ChatViewController.swift in Sources */,
+				EDA60FBA1FD9113E005632A8 /* Const.swift in Sources */,
+				ED2F22591FD7F64100FBE5B4 /* KeyboardObservable.swift in Sources */,
+				EDEBC6EE1FD7DDD000C04972 /* SessionContainer.swift in Sources */,
+				EDC4CF651FDA3CD9007660EC /* SessionContainer2.swift in Sources */,
+				EDEBC6EF1FD7DDD000C04972 /* Transcript.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED213C091FD7DB790026E92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED213C0A1FD7DB790026E92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED213C1F1FD7DB970026E92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV3EBK3G3Y;
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS-MultipeerConnectivity/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.hryk224.tvOS-MultipeerConnectivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		ED213C201FD7DB970026E92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV3EBK3G3Y;
+				INFOPLIST_FILE = "$(SRCROOT)/tvOS-MultipeerConnectivity/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.hryk224.tvOS-MultipeerConnectivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		ED213C351FD7DBA70026E92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV3EBK3G3Y;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-MultipeerConnectivity/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.hryk224.iOS-MultipeerConnectivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED213C361FD7DBA70026E92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RV3EBK3G3Y;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-MultipeerConnectivity/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.hryk224.iOS-MultipeerConnectivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED213BF41FD7DB790026E92A /* Build configuration list for PBXProject "MultipeerConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED213C091FD7DB790026E92A /* Debug */,
+				ED213C0A1FD7DB790026E92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED213C1E1FD7DB970026E92A /* Build configuration list for PBXNativeTarget "tvOS-MultipeerConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED213C1F1FD7DB970026E92A /* Debug */,
+				ED213C201FD7DB970026E92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED213C341FD7DBA70026E92A /* Build configuration list for PBXNativeTarget "iOS-MultipeerConnectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED213C351FD7DBA70026E92A /* Debug */,
+				ED213C361FD7DBA70026E92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED213BF11FD7DB790026E92A /* Project object */;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatMessageView" customModule="iOS_MultipeerConnectivity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="277"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nD-dj-1rF">
+                    <rect key="frame" x="20" y="0.0" width="94" height="277"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" title="Button" backgroundImage="left">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3If-U5-5NO">
+                    <rect key="frame" x="464" y="0.0" width="86" height="277"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" title="Button" backgroundImage="right">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9nD-dj-1rF" secondAttribute="bottom" id="8dL-jg-m6t"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3If-U5-5NO" secondAttribute="bottom" id="GHb-UF-48J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3If-U5-5NO" secondAttribute="trailing" constant="20" id="HOM-Oc-Ylk"/>
+                <constraint firstItem="3If-U5-5NO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="TV0-mq-7j7"/>
+                <constraint firstItem="9nD-dj-1rF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="VQa-hC-L0e"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9nD-dj-1rF" secondAttribute="trailing" constant="20" id="qAe-6y-Gf5"/>
+                <constraint firstItem="3If-U5-5NO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rl1-eN-Tq1"/>
+                <constraint firstItem="9nD-dj-1rF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zpi-u8-ezw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="messageButton" destination="9nD-dj-1rF" id="snL-fK-ad2"/>
+                <outlet property="selfMessageButton" destination="3If-U5-5NO" id="LmB-f2-Vym"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="-34.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left" width="56" height="35"/>
+        <image name="right" width="56" height="35"/>
+    </resources>
+</document>

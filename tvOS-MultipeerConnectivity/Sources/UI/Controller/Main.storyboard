@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cN3-EK-iTZ">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yz5-k6-Bvs">
+            <objects>
+                <navigationController id="cN3-EK-iTZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vyK-gV-Vns">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FGO-7t-gux" kind="relationship" relationship="rootViewController" id="NLD-RB-E2l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIJ-5e-nLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3952" y="65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SSF-z3-ynC">
+            <objects>
+                <viewController id="FGO-7t-gux" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKD-jh-s1p"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMC-PV-EJ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7pw-pa-fHo">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-0m-u9l">
+                                <rect key="frame" x="560" y="390" width="800" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qev-2G-PVw">
+                                        <rect key="frame" x="0.0" y="0.0" width="800" height="100"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="CHAT"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="qbU-Z3-c9b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTd-TP-wdp">
+                                        <rect key="frame" x="0.0" y="200" width="800" height="100"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="CAPTURE RECEIVER"/>
+                                        <connections>
+                                            <segue destination="lIN-3p-x7u" kind="show" id="f6S-Wq-k48"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="10i-Yp-6ag"/>
+                                    <constraint firstAttribute="width" constant="800" id="8yH-Gm-SDT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BtA-0m-u9l" firstAttribute="centerX" secondItem="7pw-pa-fHo" secondAttribute="centerX" id="dFd-nF-Mnm"/>
+                            <constraint firstItem="BtA-0m-u9l" firstAttribute="centerY" secondItem="7pw-pa-fHo" secondAttribute="centerY" id="ms6-Bu-bkd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UQG-kM-WbO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fNe-cs-DHD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKm-rO-RNX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1795" y="65"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChatViewController" customModule="tvOS_MultipeerConnectivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="cO7-MN-Vxv">
+                                <rect key="frame" x="90" y="145" width="1740" height="875"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Tqb-wE-jQl">
+                                        <rect key="frame" x="0.0" y="0.0" width="1740" height="0.0"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhm-Z9-GrD">
+                                                <rect key="frame" x="0.0" y="0.0" width="1740" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="Ekz-Ez-PAQ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tqb-wE-jQl" firstAttribute="leading" secondItem="cO7-MN-Vxv" secondAttribute="leading" id="3ih-o7-EKR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tqb-wE-jQl" secondAttribute="bottom" id="Xad-1W-cim"/>
+                                    <constraint firstItem="Tqb-wE-jQl" firstAttribute="top" secondItem="cO7-MN-Vxv" secondAttribute="top" id="jDr-aB-mrD"/>
+                                    <constraint firstItem="Tqb-wE-jQl" firstAttribute="width" secondItem="cO7-MN-Vxv" secondAttribute="width" id="l24-21-e5B"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tqb-wE-jQl" secondAttribute="trailing" id="nxm-8s-jG6"/>
+                                </constraints>
+                            </scrollView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-45-H0w">
+                                <rect key="frame" x="911" y="517" width="97" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="cO7-MN-Vxv" secondAttribute="trailing" id="WV8-nd-7jM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cO7-MN-Vxv" secondAttribute="bottom" id="dkI-RA-pWA"/>
+                            <constraint firstItem="cO7-MN-Vxv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gcA-vG-sVI"/>
+                            <constraint firstItem="cO7-MN-Vxv" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="txJ-f1-vgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                        <variation key="userInterfaceStyle=dark">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </variation>
+                        <variation key="userInterfaceStyle=light">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="fUZ-3Q-I7M">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="Ft6-Oo-X7b">
+                            <connections>
+                                <action selector="browseForPeers:" destination="BYZ-38-t0r" id="bRk-F0-VPl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vP8-o2-PE8">
+                            <connections>
+                                <action selector="sendMessageTrigger:" destination="BYZ-38-t0r" id="0oi-a1-qRg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="cO7-MN-Vxv" id="8fk-rn-4Df"/>
+                        <outlet property="stackView" destination="Tqb-wE-jQl" id="2Za-RB-994"/>
+                        <outlet property="textField" destination="tyX-45-H0w" id="dam-rI-mTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="-360"/>
+        </scene>
+        <!--Capture Sender View Controller-->
+        <scene sceneID="W8s-A3-3Ar">
+            <objects>
+                <viewController id="lIN-3p-x7u" customClass="CaptureSenderViewController" customModule="tvOS_MultipeerConnectivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CN2-Sk-Z5V"/>
+                        <viewControllerLayoutGuide type="bottom" id="2zN-p7-ofb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZiN-dA-PPB">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEc-Iz-vbB">
+                                <rect key="frame" x="90" y="145" width="1740" height="875"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2zN-p7-ofb" firstAttribute="top" secondItem="FEc-Iz-vbB" secondAttribute="bottom" id="3YL-5n-QH6"/>
+                            <constraint firstItem="FEc-Iz-vbB" firstAttribute="leading" secondItem="NFo-jg-6zG" secondAttribute="leading" id="O4H-S3-e7f"/>
+                            <constraint firstItem="NFo-jg-6zG" firstAttribute="trailing" secondItem="FEc-Iz-vbB" secondAttribute="trailing" id="dck-at-j28"/>
+                            <constraint firstItem="FEc-Iz-vbB" firstAttribute="top" secondItem="CN2-Sk-Z5V" secondAttribute="bottom" id="ks2-oj-BFP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NFo-jg-6zG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dYA-CZ-ZVD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="epw-hd-kZ5">
+                            <connections>
+                                <action selector="browseForPeers:" destination="lIN-3p-x7u" id="759-oZ-fX9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="playerView" destination="FEc-Iz-vbB" id="HWP-Fb-yLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aJ-Oc-zXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="953"/>
+        </scene>
+    </scenes>
+</document>
